@@ -1,0 +1,38 @@
+﻿@model MovieModel
+@{
+    ViewData["Title"] = "Registration Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Please Register Your Movie</h1>
+</div>
+
+<form asp-action="RegistrationConfirmation">
+    <div class="form-group col-md-6">
+        <label for="ID">ID</label>
+        <input asp-for="@Model.Id" class="form-control" id="ID" placeholder="Input the movie ID">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="Title">Title</label>
+        <input asp-for="@Model.Title" class="form-control" id="Title" placeholder="Input the Title">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="Genre">Genre</label>
+        <input asp-for="@Model.Genre" class="form-control" id="Genre" placeholder="Input the Genre">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="Year">Year</label>
+        <input asp-for="@Model.Year" class="form-control" id="Year" placeholder="Input the Year">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="Actors">Actors</label>
+        <input asp-for="@Model.Actors" class="form-control" id="Actors" placeholder="Input the Actors">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="Directors">Directors</label>
+        <input asp-for="@Model.Directors" class="form-control" id="Directors" placeholder="Input the Directors">
+    </div>
+    <div class="form-group col-md-6">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>

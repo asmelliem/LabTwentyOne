@@ -28,6 +28,16 @@ namespace LabTwentyOne.Controllers
             return View();
         }
 
+        public IActionResult Registration()
+        {
+            return View();
+        }
+
+        public IActionResult RegistrationConfirmation(MovieModel model)
+        {
+            return View(model);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
